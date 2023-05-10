@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45CFC64C29812024003B04A0 /* WebViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CFC64B29812024003B04A0 /* WebViewerController.swift */; };
+		45CFC65129825CA8003B04A0 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CFC65029825CA8003B04A0 /* HomeListView.swift */; };
+		45CFC65429827782003B04A0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CFC65329827782003B04A0 /* CustomCollectionViewCell.swift */; };
+		FB1D9806299AABEE006C3C1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D9805299AABEE006C3C1A /* LoginViewController.swift */; };
+		FB2CB7C8299BE64B006A869E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB7C7299BE64B006A869E /* SignupViewController.swift */; };
+		FB53E76629A394AE00BC0093 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76529A394AE00BC0093 /* EndPoint.swift */; };
+		FB53E76829A395CA00BC0093 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76729A395CA00BC0093 /* APIRequest.swift */; };
+		FB53E76B29A398B600BC0093 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76A29A398B600BC0093 /* User.swift */; };
+		FB72CBFD2987BD3700D3C9A9 /* RMTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CBFC2987BD3700D3C9A9 /* RMTabbarController.swift */; };
+		FB72CC022987C54A00D3C9A9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CC012987C54A00D3C9A9 /* MenuViewController.swift */; };
+		FB72CC042987C57400D3C9A9 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CC032987C57400D3C9A9 /* FavouriteViewController.swift */; };
+		FB72CC062987C5C300D3C9A9 /* RMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72CC052987C5C300D3C9A9 /* RMSettingsViewController.swift */; };
+		FB80002F298A4BE800C7BC38 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80002E298A4BE800C7BC38 /* Extentions.swift */; };
+		FB8BA0C42987EB9A00F2287D /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BA0C32987EB9A00F2287D /* MenuListViewModel.swift */; };
+		FB8BA0C82987EDB100F2287D /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BA0C72987EDB100F2287D /* MenuListView.swift */; };
+		FB91679B2978514D004DC979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91679A2978514D004DC979 /* AppDelegate.swift */; };
+		FB91679D2978514D004DC979 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91679C2978514D004DC979 /* SceneDelegate.swift */; };
+		FB9167A429785183004DC979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9167A329785183004DC979 /* Assets.xcassets */; };
+		FB9167A729785183004DC979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9167A529785183004DC979 /* LaunchScreen.storyboard */; };
+		FB9167B029786C45004DC979 /* ForgotpasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9167AF29786C45004DC979 /* ForgotpasswordController.swift */; };
+		FB9167B429786CBB004DC979 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9167B329786CBB004DC979 /* RegisterController.swift */; };
+		FB9167B629786CE0004DC979 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9167B529786CE0004DC979 /* HomeController.swift */; };
+		FBB7581029A4F43900F77064 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB7580F29A4F43900F77064 /* CustomCell.swift */; };
+		FBB9EDB2297FBB6C00F1185F /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9EDB1297FBB6C00F1185F /* AuthHeaderView.swift */; };
+		FBB9EDB4297FE1CA00F1185F /* CustomerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9EDB3297FE1CA00F1185F /* CustomerTextField.swift */; };
+		FBB9EDB6297FF30C00F1185F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9EDB5297FF30C00F1185F /* CustomButton.swift */; };
+		FBC954A02A0A7AD900D3DE59 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */; };
+		FBD69D3A2A052C8A00D17063 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD69D392A052C8A00D17063 /* StartupViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45CFC64B29812024003B04A0 /* WebViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewerController.swift; sourceTree = "<group>"; };
+		45CFC65029825CA8003B04A0 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		45CFC65329827782003B04A0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB1D9805299AABEE006C3C1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB2CB7C7299BE64B006A869E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FB53E76529A394AE00BC0093 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		FB53E76729A395CA00BC0093 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		FB53E76A29A398B600BC0093 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB72CBFC2987BD3700D3C9A9 /* RMTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMTabbarController.swift; sourceTree = "<group>"; };
+		FB72CC012987C54A00D3C9A9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FB72CC032987C57400D3C9A9 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		FB72CC052987C5C300D3C9A9 /* RMSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewController.swift; sourceTree = "<group>"; };
+		FB80002E298A4BE800C7BC38 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FB8BA0C32987EB9A00F2287D /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		FB8BA0C72987EDB100F2287D /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		FB9167972978514C004DC979 /* Epicurious Chef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Epicurious Chef.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB91679A2978514D004DC979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB91679C2978514D004DC979 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB9167A329785183004DC979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB9167A629785183004DC979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB9167A829785183004DC979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9167AF29786C45004DC979 /* ForgotpasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpasswordController.swift; sourceTree = "<group>"; };
+		FB9167B329786CBB004DC979 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		FB9167B529786CE0004DC979 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FBB7580F29A4F43900F77064 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		FBB9EDB1297FBB6C00F1185F /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		FBB9EDB3297FE1CA00F1185F /* CustomerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTextField.swift; sourceTree = "<group>"; };
+		FBB9EDB5297FF30C00F1185F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FBD69D392A052C8A00D17063 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB9167942978514C004DC979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB53E76429A3945F00BC0093 /* APICaller */ = {
+			isa = PBXGroup;
+			children = (
+				FB53E76529A394AE00BC0093 /* EndPoint.swift */,
+				FB53E76729A395CA00BC0093 /* APIRequest.swift */,
+			);
+			path = APICaller;
+			sourceTree = "<group>";
+		};
+		FB53E76929A3988B00BC0093 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB53E76A29A398B600BC0093 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB72CBFE2987BF0A00D3C9A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB72CBFC2987BD3700D3C9A9 /* RMTabbarController.swift */,
+				FB72CC012987C54A00D3C9A9 /* MenuViewController.swift */,
+				FB72CC032987C57400D3C9A9 /* FavouriteViewController.swift */,
+				FB72CC052987C5C300D3C9A9 /* RMSettingsViewController.swift */,
+				FB1D9805299AABEE006C3C1A /* LoginViewController.swift */,
+				FB2CB7C7299BE64B006A869E /* SignupViewController.swift */,
+				FBD69D392A052C8A00D17063 /* StartupViewController.swift */,
+				FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB8BA0C02987EADF00F2287D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB8BA0C32987EB9A00F2287D /* MenuListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FB91678E2978514B004DC979 = {
+			isa = PBXGroup;
+			children = (
+				FBB7580F29A4F43900F77064 /* CustomCell.swift */,
+				FB53E76929A3988B00BC0093 /* Models */,
+				FB53E76429A3945F00BC0093 /* APICaller */,
+				FB9167AE29786B42004DC979 /* Supporting */,
+				FB9167992978514C004DC979 /* Epicurious Chef */,
+				FB9167982978514C004DC979 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB9167982978514C004DC979 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB9167972978514C004DC979 /* Epicurious Chef.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB9167992978514C004DC979 /* Epicurious Chef */ = {
+			isa = PBXGroup;
+			children = (
+				FB8BA0C02987EADF00F2287D /* View Models */,
+				FB72CBFE2987BF0A00D3C9A9 /* Controllers */,
+				FB9167A829785183004DC979 /* Info.plist */,
+				FB9167AF29786C45004DC979 /* ForgotpasswordController.swift */,
+				FB9167B529786CE0004DC979 /* HomeController.swift */,
+				FB9167B329786CBB004DC979 /* RegisterController.swift */,
+				45CFC64B29812024003B04A0 /* WebViewerController.swift */,
+				FB9167B829786D79004DC979 /* views */,
+				45CFC65329827782003B04A0 /* CustomCollectionViewCell.swift */,
+			);
+			path = "Epicurious Chef";
+			sourceTree = "<group>";
+		};
+		FB9167AE29786B42004DC979 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FB91679A2978514D004DC979 /* AppDelegate.swift */,
+				FB91679C2978514D004DC979 /* SceneDelegate.swift */,
+				FB9167A329785183004DC979 /* Assets.xcassets */,
+				FB9167A529785183004DC979 /* LaunchScreen.storyboard */,
+				FB80002E298A4BE800C7BC38 /* Extentions.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		FB9167B829786D79004DC979 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FBB9EDB1297FBB6C00F1185F /* AuthHeaderView.swift */,
+				FBB9EDB3297FE1CA00F1185F /* CustomerTextField.swift */,
+				FBB9EDB5297FF30C00F1185F /* CustomButton.swift */,
+				45CFC65029825CA8003B04A0 /* HomeListView.swift */,
+				FB8BA0C72987EDB100F2287D /* MenuListView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB9167962978514C004DC979 /* Epicurious Chef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9167AB29785184004DC979 /* Build configuration list for PBXNativeTarget "Epicurious Chef" */;
+			buildPhases = (
+				FB9167932978514C004DC979 /* Sources */,
+				FB9167942978514C004DC979 /* Frameworks */,
+				FB9167952978514C004DC979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Epicurious Chef";
+			productName = "Epicurious Chef";
+			productReference = FB9167972978514C004DC979 /* Epicurious Chef.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB91678F2978514B004DC979 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FB9167962978514C004DC979 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = FB9167922978514C004DC979 /* Build configuration list for PBXProject "Epicurious Chef" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB91678E2978514B004DC979;
+			productRefGroup = FB9167982978514C004DC979 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB9167962978514C004DC979 /* Epicurious Chef */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB9167952978514C004DC979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9167A729785183004DC979 /* LaunchScreen.storyboard in Resources */,
+				FB9167A429785183004DC979 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB9167932978514C004DC979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9167B029786C45004DC979 /* ForgotpasswordController.swift in Sources */,
+				FB72CC022987C54A00D3C9A9 /* MenuViewController.swift in Sources */,
+				FB2CB7C8299BE64B006A869E /* SignupViewController.swift in Sources */,
+				FB9167B629786CE0004DC979 /* HomeController.swift in Sources */,
+				FBB9EDB6297FF30C00F1185F /* CustomButton.swift in Sources */,
+				FB1D9806299AABEE006C3C1A /* LoginViewController.swift in Sources */,
+				FB9167B429786CBB004DC979 /* RegisterController.swift in Sources */,
+				FB91679B2978514D004DC979 /* AppDelegate.swift in Sources */,
+				FB80002F298A4BE800C7BC38 /* Extentions.swift in Sources */,
+				FB91679D2978514D004DC979 /* SceneDelegate.swift in Sources */,
+				FBB9EDB4297FE1CA00F1185F /* CustomerTextField.swift in Sources */,
+				FBC954A02A0A7AD900D3DE59 /* DetailsViewController.swift in Sources */,
+				FB72CC062987C5C300D3C9A9 /* RMSettingsViewController.swift in Sources */,
+				FB53E76629A394AE00BC0093 /* EndPoint.swift in Sources */,
+				FB8BA0C82987EDB100F2287D /* MenuListView.swift in Sources */,
+				FBD69D3A2A052C8A00D17063 /* StartupViewController.swift in Sources */,
+				45CFC65429827782003B04A0 /* CustomCollectionViewCell.swift in Sources */,
+				FB53E76829A395CA00BC0093 /* APIRequest.swift in Sources */,
+				FB72CBFD2987BD3700D3C9A9 /* RMTabbarController.swift in Sources */,
+				45CFC65129825CA8003B04A0 /* HomeListView.swift in Sources */,
+				FB8BA0C42987EB9A00F2287D /* MenuListViewModel.swift in Sources */,
+				45CFC64C29812024003B04A0 /* WebViewerController.swift in Sources */,
+				FB72CC042987C57400D3C9A9 /* FavouriteViewController.swift in Sources */,
+				FBB9EDB2297FBB6C00F1185F /* AuthHeaderView.swift in Sources */,
+				FBB7581029A4F43900F77064 /* CustomCell.swift in Sources */,
+				FB53E76B29A398B600BC0093 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB9167A529785183004DC979 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9167A629785183004DC979 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB9167A929785183004DC979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB9167AA29785184004DC979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB9167AC29785184004DC979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Epicurious Chef/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nibm.Epicurious-Chef";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FB9167AD29785184004DC979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Epicurious Chef/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nibm.Epicurious-Chef";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB9167922978514C004DC979 /* Build configuration list for PBXProject "Epicurious Chef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9167A929785183004DC979 /* Debug */,
+				FB9167AA29785184004DC979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9167AB29785184004DC979 /* Build configuration list for PBXNativeTarget "Epicurious Chef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9167AC29785184004DC979 /* Debug */,
+				FB9167AD29785184004DC979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB91678F2978514B004DC979 /* Project object */;
+}
