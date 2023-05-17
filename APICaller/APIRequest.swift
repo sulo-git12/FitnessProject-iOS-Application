@@ -10,16 +10,16 @@ import Foundation
 final class APIRequest {
     
     static let shared = APIRequest()
-    private let BaseAPIURL = "https://foodandnutritionlevels-production-9dab.up.railway.app/api/"
+    private let BaseAPIURL = "https://fitnessiosproject.onrender.com/api/"
     
     enum APIError: Error{
         case failedToCreateRequest
         case failedToGetData
     }
     
-    // MARK: - Get Users
-    public func getUsers(endpoint: String, completion: @escaping (Result<[User], Error>) -> Void) {
-        
+    // MARK: - Get  EXCERCISES
+    public func getExcercisers(endpoint: String, completion: @escaping (Result<[ExerciseModel], Error>) -> Void) {
+        print(BaseAPIURL + endpoint)
         createRequest(with: URL(string: BaseAPIURL + endpoint), type: .GET) {
             request in
             
@@ -32,7 +32,7 @@ final class APIRequest {
                 }
                 
                 do{
-                    let result = try JSONDecoder().decode([User].self, from: data)
+                    let result = try JSONDecoder().decode([ExerciseModel].self, from: data)
                     completion(.success(result))
                 }
                 catch{
