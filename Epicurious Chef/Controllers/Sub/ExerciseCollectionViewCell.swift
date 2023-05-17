@@ -22,7 +22,7 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 30, weight: .regular)
+        label.font = .systemFont(ofSize: 22, weight: .regular)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -52,9 +52,9 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
             exerciseImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             exerciseImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
             exerciseImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-            exerciseImageView.heightAnchor.constraint(equalToConstant: 130),
+            exerciseImageView.heightAnchor.constraint(equalToConstant: 145),
             
-            nameLabel.topAnchor.constraint(equalTo: exerciseImageView.bottomAnchor, constant: 3),
+            nameLabel.topAnchor.constraint(equalTo: exerciseImageView.bottomAnchor, constant: 0),
             nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
             nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0),
         ])

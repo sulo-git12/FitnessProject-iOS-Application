@@ -18,9 +18,9 @@ final class RMTabbarController: UITabBarController {
     }
     
     private func setUpTabs(){
-       let menuVC = DetailsViewController()
-       let favouriteVC = FavouriteViewController()
-       let settingsVC = RMSettingsViewController()
+       let menuVC = HomeViewController()
+       let favouriteVC = DetailsViewController()
+       let settingsVC = UserDetailsViewController()
         
         menuVC.navigationItem.largeTitleDisplayMode = .automatic
         favouriteVC.navigationItem.largeTitleDisplayMode = .automatic

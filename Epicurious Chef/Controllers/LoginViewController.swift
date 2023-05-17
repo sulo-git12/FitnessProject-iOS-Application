@@ -10,7 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     //MARK: - Variables
-    var UserModel = [User]()
+    var UserModel = [ExerciseModel]()
     
     //MARK: - UI Components
     private let backgroundImageView: UIImageView = {
@@ -209,49 +209,49 @@ class LoginViewController: UIViewController {
     
     // MARK: - Functions
     @objc private func didTapLogin(){
-        
-        let email = emailText.text?.trimmingCharacters(in: .whitespaces)
-        let password = passwordText.text?.trimmingCharacters(in: .whitespaces)
-        
-        if (email!.isEmpty || password!.isEmpty) {
-            let alert = UIAlertController(title: "Error", message: "Required Username or Password", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            return
-        }
-        
-        let endpoint = EndPoint.users + "/\(email!)/\(password!)"
-        
-        APIRequest.shared.getUsers(endpoint: endpoint) {
-            result in
-            
-            DispatchQueue.main.async {
-                
-                switch result {
-                    
-                case .success(let model):
-                    self.UserModel = model
-//                    print(self.UserModel)
-                    if (self.UserModel.count == 1) {
-                        let vc = RMTabbarController()
-                        vc.modalPresentationStyle = .fullScreen
-                        self.present(vc, animated: false, completion: nil)
-                    }
-                    else {
-                        let alert = UIAlertController(title: "Error", message: "Incorrect Username or Password", preferredStyle: UIAlertController.Style.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                    
-                case .failure(let error):
-                    let alert = UIAlertController(title: "Error", message: String(describing: error), preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                    
-                }
-            }
-            
-        }
+//        
+//        let email = emailText.text?.trimmingCharacters(in: .whitespaces)
+//        let password = passwordText.text?.trimmingCharacters(in: .whitespaces)
+//        
+//        if (email!.isEmpty || password!.isEmpty) {
+//            let alert = UIAlertController(title: "Error", message: "Required Username or Password", preferredStyle: UIAlertController.Style.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
+//            return
+//        }
+//        
+//        let endpoint = EndPoint.exercises + "/\(email!)/\(password!)"
+//        
+//        APIRequest.shared.getUsers(endpoint: endpoint) {
+//            result in
+//            
+//            DispatchQueue.main.async {
+//                
+//                switch result {
+//                    
+//                case .success(let model):
+//                    self.UserModel = model
+////                    print(self.UserModel)
+//                    if (self.UserModel.count == 1) {
+//                        let vc = RMTabbarController()
+//                        vc.modalPresentationStyle = .fullScreen
+//                        self.present(vc, animated: false, completion: nil)
+//                    }
+//                    else {
+//                        let alert = UIAlertController(title: "Error", message: "Incorrect Username or Password", preferredStyle: UIAlertController.Style.alert)
+//                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//                        self.present(alert, animated: true, completion: nil)
+//                    }
+//                    
+//                case .failure(let error):
+//                    let alert = UIAlertController(title: "Error", message: String(describing: error), preferredStyle: UIAlertController.Style.alert)
+//                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//                    self.present(alert, animated: true, completion: nil)
+//                    
+//                }
+//            }
+//            
+//        }
     }
     
     @objc private func didTapSignUp(){

@@ -6,6 +6,8 @@
 //
 import UIKit
 
+
+
 class DetailsViewController: UIViewController {
     
     //MARK: - UI Components
@@ -81,6 +83,8 @@ class DetailsViewController: UIViewController {
         setUpUI()
         setValues()
     }
+    
+   
     
     //MARK: - UI Setup
     private func setUpUI(){
