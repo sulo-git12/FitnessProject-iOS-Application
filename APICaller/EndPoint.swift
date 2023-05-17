@@ -11,7 +11,7 @@ final class EndPoint{
     
     static let shared = EndPoint()
     
-    static let users = "users"
+    static let exercises = "exercises"
     static let foods = "foods"
     static let favFoods = "favFoods"
 }
