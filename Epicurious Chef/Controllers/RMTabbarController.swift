@@ -19,8 +19,8 @@ final class RMTabbarController: UITabBarController {
     
     private func setUpTabs(){
        let menuVC = HomeViewController()
-       let favouriteVC = DetailsViewController()
-       let settingsVC = UserDetailsViewController()
+       let favouriteVC = CalculateBMIViewController() 
+       let settingsVC = CustomScheduleViewController()
         
         menuVC.navigationItem.largeTitleDisplayMode = .automatic
         favouriteVC.navigationItem.largeTitleDisplayMode = .automatic
@@ -34,15 +34,15 @@ final class RMTabbarController: UITabBarController {
        let nav2 = UINavigationController(rootViewController: favouriteVC)
        let nav3 = UINavigationController(rootViewController: settingsVC)
         
-        nav1.tabBarItem = UITabBarItem(title: "Food Menu",
+        nav1.tabBarItem = UITabBarItem(title: "Home",
                                        image: UIImage(systemName: "house"),
                                        tag: 1)
         
-        nav2.tabBarItem = UITabBarItem(title: "Favourite Food",
+        nav2.tabBarItem = UITabBarItem(title: "Fitness Plan",
                                        image: UIImage(systemName: "heart.fill"),
                                        tag: 2)
         
-        nav3.tabBarItem = UITabBarItem(title: "Settings",
+        nav3.tabBarItem = UITabBarItem(title: "Custom Shedule",
                                        image: UIImage(systemName: "checkmark.seal"),
                                        tag: 3)
         
