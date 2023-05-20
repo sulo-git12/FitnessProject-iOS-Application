@@ -86,6 +86,19 @@ class DetailsViewController: UIViewController {
         return button
     }()
     
+    private let playVideoButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Play excercise Video", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 22, weight: .bold)
+        button.setTitleColor(.black, for: .normal)
+        let color = UIColor(rgb: 0xe0fe10)
+        button.backgroundColor = color
+        button.layer.cornerRadius = 20
+        button.layer.borderWidth = 1
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,6 +119,7 @@ class DetailsViewController: UIViewController {
         view.addSubview(targetMuscleGroupsLabel)
         view.addSubview(repsAndStepsLabel)
         view.addSubview(addToCustSheduleButton)
+        view.addSubview(playVideoButton)
         
         NSLayoutConstraint.activate([
             exceriseImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 75),
@@ -133,6 +147,12 @@ class DetailsViewController: UIViewController {
             repsAndStepsLabel.topAnchor.constraint(equalTo: targetMuscleGroupsLabel.bottomAnchor, constant: 5),
             repsAndStepsLabel.rightAnchor.constraint(equalTo: view.rightAnchor),
             repsAndStepsLabel.leftAnchor.constraint(equalTo: view.leftAnchor),
+            
+            
+            playVideoButton.topAnchor.constraint(equalTo: repsAndStepsLabel.bottomAnchor, constant: 5),
+            playVideoButton.rightAnchor.constraint(equalTo: view.rightAnchor),
+            playVideoButton.leftAnchor.constraint(equalTo: view.leftAnchor),
+            
             
             addToCustSheduleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             addToCustSheduleButton.widthAnchor.constraint(equalToConstant: 350),
