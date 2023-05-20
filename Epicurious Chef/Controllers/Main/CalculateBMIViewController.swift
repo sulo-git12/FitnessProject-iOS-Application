@@ -96,6 +96,7 @@ class CalculateBMIViewController: UIViewController {
        
         NSLayoutConstraint.activate([
             
+            
             uppercalBMILabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 85),
             uppercalBMILabel.rightAnchor.constraint(equalTo: view.rightAnchor),
             uppercalBMILabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5),
