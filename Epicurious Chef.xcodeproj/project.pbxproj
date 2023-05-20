@@ -12,6 +12,8 @@
 		45CFC65429827782003B04A0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CFC65329827782003B04A0 /* CustomCollectionViewCell.swift */; };
 		FB1D9806299AABEE006C3C1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D9805299AABEE006C3C1A /* LoginViewController.swift */; };
 		FB2CB7C8299BE64B006A869E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CB7C7299BE64B006A869E /* SignupViewController.swift */; };
+		FB4C0AAA2A18A57A00955708 /* CustomSheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C0AA92A18A57A00955708 /* CustomSheduleCollectionViewCell.swift */; };
+		FB4C0AAC2A18B01E00955708 /* CalculateBMICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C0AAB2A18B01E00955708 /* CalculateBMICollectionViewCell.swift */; };
 		FB53E76629A394AE00BC0093 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76529A394AE00BC0093 /* EndPoint.swift */; };
 		FB53E76829A395CA00BC0093 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76729A395CA00BC0093 /* APIRequest.swift */; };
 		FB53E76B29A398B600BC0093 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB53E76A29A398B600BC0093 /* ExerciseModel.swift */; };
@@ -40,6 +42,9 @@
 		FBC954A02A0A7AD900D3DE59 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */; };
 		FBD5DBD42A13EE100051E767 /* WorkoutDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5DBD32A13EE100051E767 /* WorkoutDetailsViewController.swift */; };
 		FBD69D3A2A052C8A00D17063 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD69D392A052C8A00D17063 /* StartupViewController.swift */; };
+		FBD937732A154C6A0041EF82 /* excercise video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FBD937722A154C6A0041EF82 /* excercise video.mp4 */; };
+		FBE1B7DE2A175A9300BFEFB5 /* CustomScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1B7DD2A175A9300BFEFB5 /* CustomScheduleViewController.swift */; };
+		FBE1B7E02A175AF400BFEFB5 /* ViewCustomScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1B7DF2A175AF400BFEFB5 /* ViewCustomScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,8 @@
 		45CFC65329827782003B04A0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB1D9805299AABEE006C3C1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB2CB7C7299BE64B006A869E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FB4C0AA92A18A57A00955708 /* CustomSheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheduleCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB4C0AAB2A18B01E00955708 /* CalculateBMICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBMICollectionViewCell.swift; sourceTree = "<group>"; };
 		FB53E76529A394AE00BC0093 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		FB53E76729A395CA00BC0093 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FB53E76A29A398B600BC0093 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
@@ -78,6 +85,9 @@
 		FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		FBD5DBD32A13EE100051E767 /* WorkoutDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsViewController.swift; sourceTree = "<group>"; };
 		FBD69D392A052C8A00D17063 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		FBD937722A154C6A0041EF82 /* excercise video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "excercise video.mp4"; path = "../../../../Downloads/excercise video.mp4"; sourceTree = "<group>"; };
+		FBE1B7DD2A175A9300BFEFB5 /* CustomScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScheduleViewController.swift; sourceTree = "<group>"; };
+		FBE1B7DF2A175AF400BFEFB5 /* ViewCustomScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +133,11 @@
 				FBD69D392A052C8A00D17063 /* StartupViewController.swift */,
 				FBC9549F2A0A7AD900D3DE59 /* DetailsViewController.swift */,
 				FBA93E1F2A126535007205A7 /* CalculateBMIViewController.swift */,
+				FB4C0AAB2A18B01E00955708 /* CalculateBMICollectionViewCell.swift */,
 				FBD5DBD32A13EE100051E767 /* WorkoutDetailsViewController.swift */,
+				FBE1B7DD2A175A9300BFEFB5 /* CustomScheduleViewController.swift */,
+				FB4C0AA92A18A57A00955708 /* CustomSheduleCollectionViewCell.swift */,
+				FBE1B7DF2A175AF400BFEFB5 /* ViewCustomScheduleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 		FB9167992978514C004DC979 /* Epicurious Chef */ = {
 			isa = PBXGroup;
 			children = (
+				FBD937722A154C6A0041EF82 /* excercise video.mp4 */,
 				FB8BA0C02987EADF00F2287D /* View Models */,
 				FB72CBFE2987BF0A00D3C9A9 /* Controllers */,
 				FB9167A829785183004DC979 /* Info.plist */,
@@ -272,6 +287,7 @@
 			files = (
 				FB9167A729785183004DC979 /* LaunchScreen.storyboard in Resources */,
 				FB9167A429785183004DC979 /* Assets.xcassets in Resources */,
+				FBD937732A154C6A0041EF82 /* excercise video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +316,13 @@
 				FB53E76629A394AE00BC0093 /* EndPoint.swift in Sources */,
 				FB78FFDF2A0D0BF00022DAC1 /* HomeViewController.swift in Sources */,
 				FB8BA0C82987EDB100F2287D /* MenuListView.swift in Sources */,
+				FB4C0AAC2A18B01E00955708 /* CalculateBMICollectionViewCell.swift in Sources */,
+				FB4C0AAA2A18A57A00955708 /* CustomSheduleCollectionViewCell.swift in Sources */,
 				FBD69D3A2A052C8A00D17063 /* StartupViewController.swift in Sources */,
 				45CFC65429827782003B04A0 /* CustomCollectionViewCell.swift in Sources */,
+				FBE1B7DE2A175A9300BFEFB5 /* CustomScheduleViewController.swift in Sources */,
 				FB53E76829A395CA00BC0093 /* APIRequest.swift in Sources */,
+				FBE1B7E02A175AF400BFEFB5 /* ViewCustomScheduleViewController.swift in Sources */,
 				FBA93E202A126535007205A7 /* CalculateBMIViewController.swift in Sources */,
 				FBC388B62A0E3815004EAF11 /* UserDetailsViewController.swift in Sources */,
 				FB72CBFD2987BD3700D3C9A9 /* RMTabbarController.swift in Sources */,

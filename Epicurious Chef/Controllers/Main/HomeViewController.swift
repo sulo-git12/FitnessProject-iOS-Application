@@ -9,6 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var ExcersiseImage = ["Deadlift", "Bench Press", "Squat", "Pull-ups"]
+    
+    var ExcersiseName = ["Deadlift", "Bench Press", "Squat", "Pull-ups"]
+    
+    
     //    let myViewController = HomeViewController()
     //
     //    // Embed the view controller in a UINavigationController
@@ -170,7 +175,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return ExcersiseName.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -180,7 +185,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         ) as? ExerciseCollectionViewCell else {
             fatalError("Unsupported Cell")
         }
-        cell.setUpValues(exerciseName: "Squats",  exerciseImageUrl: "excercice-image")
+        cell.setUpValues(exerciseName: ExcersiseName[indexPath.row],  exerciseImageUrl: ExcersiseImage[indexPath.row])
         return cell
         
     }
