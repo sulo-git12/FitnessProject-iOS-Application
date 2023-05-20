@@ -178,6 +178,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return ExcersiseName.count
     }
     
+
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: ExerciseCollectionViewCell.cellIdentifier,
@@ -188,6 +190,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.setUpValues(exerciseName: ExcersiseName[indexPath.row],  exerciseImageUrl: ExcersiseImage[indexPath.row])
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let detailVC = DetailsViewController()
+        detailVC.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
