@@ -75,7 +75,7 @@ class CalculateBMIViewController: UIViewController {
         
         
         view.backgroundColor = .systemBackground
-        title = "Suggested fitness plans"
+//        title = "Suggested fitness plans"
         
         setValues()
         setUpUI()
