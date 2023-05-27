@@ -14,11 +14,24 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
     private let exerciseImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
+        imageView.layer.cornerRadius=20
+        imageView.clipsToBounds=true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.textAlignment = .left
+        label.font = .systemFont(ofSize: 22, weight: .regular)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let calLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
@@ -47,6 +60,8 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
         
         contentView.addSubview(exerciseImageView)
         contentView.addSubview(nameLabel)
+        contentView.addSubview(calLabel)
+        
         
         NSLayoutConstraint.activate([
             exerciseImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -54,9 +69,12 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
             exerciseImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
             exerciseImageView.heightAnchor.constraint(equalToConstant: 145),
             
-            nameLabel.topAnchor.constraint(equalTo: exerciseImageView.bottomAnchor, constant: 0),
+            nameLabel.topAnchor.constraint(equalTo: exerciseImageView.bottomAnchor, constant: 5),
             nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
             nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0),
+            
+            calLabel.topAnchor.constraint(equalTo: exerciseImageView.bottomAnchor, constant: 5),
+            calLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0),
         ])
     }
     
@@ -64,5 +82,6 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
         {
             self.exerciseImageView.image = UIImage(named: exerciseImageUrl)
             self.nameLabel.text = exerciseName
+            self.calLabel.text="37🍽️"
         }
 }

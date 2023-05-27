@@ -18,7 +18,18 @@ class CustomScheduleExerciseTableViewCell: UITableViewCell {
     
     private let exerciseNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(rgb: 0xe0fe10)
+        label.textColor = .label
+        label.textAlignment = .left
+        label.font = .systemFont(ofSize: 22, weight: .semibold)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let repLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .secondaryLabel
         label.textAlignment = .left
         label.font = .systemFont(ofSize: 20, weight: .regular)
         label.lineBreakMode = .byWordWrapping
@@ -26,6 +37,17 @@ class CustomScheduleExerciseTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+//    private let equipmentLabel: UILabel = {
+//        let label = UILabel()
+//        label.textColor = .secondaryLabel
+//        label.textAlignment = .left
+//        label.font = .systemFont(ofSize: 20, weight: .regular)
+//        label.lineBreakMode = .byWordWrapping
+//        label.numberOfLines = 0
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        return label
+//    }()
     
     //MARK: - Variables
         static let identifier = "CustomScheduleExerciseTableViewCell"
@@ -48,6 +70,8 @@ class CustomScheduleExerciseTableViewCell: UITableViewCell {
        private func addSubviews(){
            contentView.addSubview(exerciseImageView)
            contentView.addSubview(exerciseNameLabel)
+           contentView.addSubview(repLabel)
+//           contentView.addSubview(equipmentLabel)
        }
        
        //  MARK: - Setup UI Constraints
@@ -62,6 +86,16 @@ class CustomScheduleExerciseTableViewCell: UITableViewCell {
                exerciseNameLabel.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor ,constant: 1),
                exerciseNameLabel.leadingAnchor.constraint(equalTo: exerciseImageView.trailingAnchor, constant: 10),
                exerciseNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+               
+               repLabel.topAnchor.constraint(equalTo: exerciseNameLabel.bottomAnchor ,constant: 20),
+               repLabel.leadingAnchor.constraint(equalTo: exerciseImageView.trailingAnchor, constant: 10),
+               repLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+               repLabel.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -2)
+               
+//               equipmentLabel.topAnchor.constraint(equalTo: repLabel.bottomAnchor ,constant: 20),
+//               equipmentLabel.leadingAnchor.constraint(equalTo: exerciseImageView.trailingAnchor, constant: 10),
+//               equipmentLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+//               equipmentLabel.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -1)
            ])
            
        }
@@ -71,5 +105,8 @@ class CustomScheduleExerciseTableViewCell: UITableViewCell {
        {
            exerciseImageView.image = UIImage(named: exerciseImageUrl)
            exerciseNameLabel.text = exerciseName
+           repLabel.text = "2 Set & 4 Reps"
+//           equipmentLabel.text = "barbell, some bumper plates "
+           
        }
 }

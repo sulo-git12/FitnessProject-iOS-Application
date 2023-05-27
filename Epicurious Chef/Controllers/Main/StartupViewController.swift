@@ -90,7 +90,7 @@ class StartupViewController: UIViewController {
     
     
     @objc private func didTapLogin(){
-        let vc = RMTabbarController()
+        let vc = UserDetailsViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }

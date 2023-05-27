@@ -28,11 +28,11 @@ class CalculateBMIViewController: UIViewController {
         return label
     }()
     
-    private let customScheduleTableView: UITableView = {
+    private let suggestFitnessPlanTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .systemBackground
         tableView.allowsSelection = true
-        tableView.register(CustomScheduleExerciseTableViewCell.self, forCellReuseIdentifier: CustomScheduleExerciseTableViewCell.identifier)
+        tableView.register(CalculateBMICollectionViewCell.self, forCellReuseIdentifier: CalculateBMICollectionViewCell.identifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -40,6 +40,7 @@ class CalculateBMIViewController: UIViewController {
     private let uppercalBMILabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
+        label.textColor = UIColor(rgb: 0xe0fe10)
         label.font = .systemFont(ofSize: 30, weight: .regular)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
@@ -88,14 +89,13 @@ class CalculateBMIViewController: UIViewController {
         view.addSubview(calBMILabel)
         //        view.addSubview(calBMIText)
         view.addSubview(customScheduleLabel)
-        view.addSubview(customScheduleTableView)
+        view.addSubview(suggestFitnessPlanTableView)
         
         
-        customScheduleTableView.delegate = self
-        customScheduleTableView.dataSource = self
+        suggestFitnessPlanTableView.delegate = self
+        suggestFitnessPlanTableView.dataSource = self
        
         NSLayoutConstraint.activate([
-            
             
             uppercalBMILabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 85),
             uppercalBMILabel.rightAnchor.constraint(equalTo: view.rightAnchor),
@@ -109,10 +109,10 @@ class CalculateBMIViewController: UIViewController {
             customScheduleLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5),
             customScheduleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 5),
             
-            customScheduleTableView.topAnchor.constraint(equalTo: customScheduleLabel.bottomAnchor, constant: 5),
-            customScheduleTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            customScheduleTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            customScheduleTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            suggestFitnessPlanTableView.topAnchor.constraint(equalTo: customScheduleLabel.bottomAnchor, constant: 5),
+            suggestFitnessPlanTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            suggestFitnessPlanTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            suggestFitnessPlanTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             
             //            calBMIText.topAnchor.constraint(equalTo: calBMILabel.bottomAnchor, constant: 10),
             //            calBMIText.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5),
@@ -154,14 +154,13 @@ extension CalculateBMIViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: CustomScheduleExerciseTableViewCell.identifier,
+            withIdentifier: CalculateBMICollectionViewCell.identifier,
             for: indexPath
-        ) as? CustomScheduleExerciseTableViewCell else {
+        ) as? CalculateBMICollectionViewCell else {
             fatalError("Unsupported Cell")
         }
         
         cell.setUpValues(exerciseName: ExcersiseName[indexPath.row],  exerciseImageUrl: ExcersiseImage[indexPath.row])
-        
         return cell
     }
     

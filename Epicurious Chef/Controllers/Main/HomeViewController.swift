@@ -9,9 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var ExcersiseImage = ["Deadlift", "Bench Press", "Squat", "Pull-ups"]
+    var ExcersiseImage = ["Deadlift", "Bench Press", "Squat", "Pullups", "Bicep Curls", "Barbell Bench Press", "Bench Press"]
     
-    var ExcersiseName = ["Deadlift", "Bench Press", "Squat", "Pull-ups"]
+    var ExcersiseName = ["Deadlift", "Bench Press", "Squat", "Pullups", "Bicep Curls", "Barbell Bench Press", "Bench Press"]
     
     
     //    let myViewController = HomeViewController()
@@ -26,6 +26,8 @@ class HomeViewController: UIViewController {
     private let userImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
+        imageView.layer.cornerRadius=50
+        imageView.clipsToBounds=true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -34,7 +36,7 @@ class HomeViewController: UIViewController {
         let label = UILabel()
         label.textColor = UIColor(rgb: 0xe0fe10)
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.font = .systemFont(ofSize: 24, weight: .semibold)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -45,7 +47,7 @@ class HomeViewController: UIViewController {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.font = .systemFont(ofSize: 22, weight: .regular)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -56,7 +58,7 @@ class HomeViewController: UIViewController {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.font = .systemFont(ofSize: 26, weight: .regular)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -77,6 +79,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
+        navigationItem.largeTitleDisplayMode = .never
+                let notificationButton = UIBarButtonItem(
+                    image: UIImage(systemName: "bell"),
+                    style: .done,
+                    target: self,
+                    action: #selector(didTapNotification)
+                )
+        notificationButton.tintColor=UIColor.systemGreen
+        navigationItem.rightBarButtonItem=notificationButton
         
         setUpUI()
         setValues()
@@ -119,20 +131,17 @@ class HomeViewController: UIViewController {
             //            exerciseCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             exerciseCollectionView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
         ])
-        
-        
-        
-        
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Create and push the new view controller
-        let detailViewController = DetailsViewController()
-        navigationController?.pushViewController(detailViewController, animated: true)
+    
+    @objc private func didTapNotification(){
+        let vc = NotificationViewController()
+        vc.navigationItem.largeTitleDisplayMode = .always
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func setValues(){
         userImageView.image  = UIImage(named: "images")
-        userWelcomeLabel.text = "Welcome Back.."
+        userWelcomeLabel.text = "Welcome back... 🌟"
         userNameLabel.text = "Sulochana Madasekara"
         excerciseNameLabel.text = "Excercises List"
         getExerciseDetails(group: "muscle building")
@@ -168,6 +177,11 @@ class HomeViewController: UIViewController {
     
     
 }
+
+
+
+
+
 
 
 

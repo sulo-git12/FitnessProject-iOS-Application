@@ -165,11 +165,21 @@ class UserDetailsViewController: UIViewController{
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
-        
+      
         setValues()
         setUpUI()
+        
+        
+        saveButton.addTarget(self, action: #selector(didTapNavigateHome), for: .touchUpInside)
     }
     
+    @objc private func didTapNavigateHome(){
+        
+        
+        let vc = RMTabbarController()
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: false, completion: nil)
+    }
     
     //MARK: - UI Setup
     private func setUpUI(){

@@ -8,16 +8,32 @@
 import UIKit
 
 class CalculateBMICollectionViewCell: UITableViewCell {
+    //MARK: - Variables
+        static let identifier = "CalculateBMICollectionViewCell"
+        
     private let exerciseImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
+        imageView.layer.cornerRadius=20
+        imageView.clipsToBounds=true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     private let exerciseNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(rgb: 0xe0fe10)
+        label.textColor = .label
+        label.textAlignment = .left
+        label.font = .systemFont(ofSize: 22, weight: .semibold)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let repLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .secondaryLabel
         label.textAlignment = .left
         label.font = .systemFont(ofSize: 20, weight: .regular)
         label.lineBreakMode = .byWordWrapping
@@ -26,15 +42,10 @@ class CalculateBMICollectionViewCell: UITableViewCell {
         return label
     }()
     
-    //MARK: - Variables
-        static let identifier = "CustomScheduleExerciseTableViewCell"
-    
-    
     //MARK: - LifeCycle
             override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
                 super.init(style: style, reuseIdentifier: reuseIdentifier)
                 
-            
                 addSubviews()
                 setUpConstraints()
             }
@@ -47,6 +58,8 @@ class CalculateBMICollectionViewCell: UITableViewCell {
        private func addSubviews(){
            contentView.addSubview(exerciseImageView)
            contentView.addSubview(exerciseNameLabel)
+           contentView.addSubview(repLabel)
+//           contentView.addSubview(equipmentLabel)
        }
        
        //  MARK: - Setup UI Constraints
@@ -58,9 +71,14 @@ class CalculateBMICollectionViewCell: UITableViewCell {
                exerciseImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
                exerciseImageView.widthAnchor.constraint(equalToConstant: 145),
                
-               exerciseNameLabel.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor ,constant: 1),
+               exerciseNameLabel.topAnchor.constraint(equalTo: exerciseImageView.topAnchor, constant: -10),
                exerciseNameLabel.leadingAnchor.constraint(equalTo: exerciseImageView.trailingAnchor, constant: 10),
                exerciseNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+               
+               repLabel.topAnchor.constraint(equalTo: exerciseNameLabel.bottomAnchor ,constant: 20),
+               repLabel.leadingAnchor.constraint(equalTo: exerciseImageView.trailingAnchor, constant: 10),
+               repLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5),
+               repLabel.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -1)
            ])
            
        }
@@ -70,6 +88,7 @@ class CalculateBMICollectionViewCell: UITableViewCell {
        {
            exerciseImageView.image = UIImage(named: exerciseImageUrl)
            exerciseNameLabel.text = exerciseName
+           repLabel.text = "2 Set & 4 Reps"
        }
 }
 

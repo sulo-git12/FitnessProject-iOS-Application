@@ -18,7 +18,7 @@ class CustomScheduleViewController: UIViewController {
         let label = UILabel()
         label.textColor = .label
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .regular)
+        label.font = .systemFont(ofSize: 26, weight: .regular)
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -71,7 +71,7 @@ class CustomScheduleViewController: UIViewController {
     
     private func setValues(){
         
-        customScheduleLabel.text = "Custom Schedule.."
+        customScheduleLabel.text = "Custom Schedule..💪"
        
     }
 
